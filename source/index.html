@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a href="#" class="page-header__logo"><img src="#" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main page-main--index">
+    <h1 class="visually-hidden">"Пинк" Взгляните на жизнь иначе!</h1>
+    <section class="download">
+      <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="hand-pic download__hand-pic">
+      <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение
+      </a>
+      <ul class="download__list">
+        <li class="download__item">
+          <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
+              <img src="http://placehold.it/150x100" width="#" height="#"  alt="Apple" class="download__link download__link-apple">
+            </a>
+        </li>
+        <li class="download__item">
+          <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru" class="download__logo download__logo--android">
+              <img src="http://placehold.it/150x100" width="#" height="#"  alt="Android" class="download__link download__link-android">
+            </a>
+        </li>
+        <li class="download__item">
+          <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="download__logo download__logo--windows">
+              <img src="http://placehold.it/150x100" width="#" height="#"  alt="Windows" class="download__link download__link-windows">
+            </a>
+        </li>
+      </ul>
+      <p class="download__availability-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="features">
+      <h2 class="visually-hidden">Особенности программы!</h2>
+      <p class="features__slogan">Устали от серости мегаполиса?</p>
+      <p class="features__slogan">Нам есть, что вам предложить!</p>
+      <ul class="features__list">
+        <li class="features__item">
+          <p class="features__name">Поднимает настроение</p>
+          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <p class="features__name">Меняет мир вокруг</p>
+          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <p class="features__name">Заводит новых друзей</p>
+          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="phone-pic features__phone-pic">
+    </section>
+    <section class="review">
+      <h2 class="visually-hidden">Отзывы наших клиентов</h2>
+      <div class="review__wrap">
+        <p class="review__author">Николай Петров</p>
+        <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+      <p class="slider-nav review__slider">
+        <button type="button" class="slider-nav__dot"></button>
+        <button type="button" class="slider-nav__dot"></button>
+        <button type="button" class="slider-nav__dot"></button>
+      </p>
+    </section>
+    <section class="subscribe">
+      <tr>
+        <td>
+          <p class="subscribe__package">Стандарт
+            <br>3,99 Usd</p>
+        </td>
+        <td>
+          <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+        </td>
+        <td>
+          <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
+        </td>
+        <td>
+          <p class="subscribe__text subscribe__text--cross">Комментарии</p>
+        </td>
+      </tr>
+      <p class="slider-nav subscribe__slider">
+        <button type="button" class="slider-nav__dot"></button>
+        <button type="button" class="slider-nav__dot"></button>
+        <button type="button" class="slider-nav__dot"></button>
+      </p>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__question">Остались вопросы? Свяжитесь с нами!</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <p class="contacts__text">Звоните:</p>
+          <a href="tel:+78125556666" class="contacts__adress">+7(812)-555-66-66</a>
+        </li>
+        <li class="contacts__item">
+          <p class="contacts__text">Пишите:</p>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__adress">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <p class="contacts__text">Приезжайте в гости:</p>
+          <a href="https://www.google.ru/maps" class="contacts__adress">ул. Большая Конюшенная, 19/8</a>
+        </li>
+      </ul>
+      <img src="http://placehold.it/150x100" alt="#" class="contacts__map">
+    </section>
+  </main>
+</body>
+
 </html>
