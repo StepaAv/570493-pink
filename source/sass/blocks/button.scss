@@ -7,14 +7,14 @@
   border: 3px solid #ffffff;
   padding: 15px 20px;
   width: 289px;
-    &--pink {
-      border-color: #d22856;
-      color: #d22856;
-      background-color: transparent;
-    }
-    &--transparent {
+  &--pink {
+    border-color: #d22856;
+    color: #d22856;
+    background-color: transparent;
+  }
+  &--transparent {
     border-color: #dddfe0;
     color: #dddfe0;
     background-color: transparent;
-    }
+  }
 }
