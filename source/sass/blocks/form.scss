@@ -1,0 +1,35 @@
+.form {
+  font-size: 14px;
+  line-height: 30px;
+  &__label--redcaps {
+    color: #d22856;
+  }
+}
+
+.form__legend {
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__list {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.form__label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__input {
+  width: 280px;
+  height: 62px;
+  padding: 0px;
+}
+
+.form__field {
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: none;
+}

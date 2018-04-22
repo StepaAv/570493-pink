@@ -1,0 +1,32 @@
+.subscribe {
+  text-transform: uppercase;
+}
+
+.subscribe__table {
+  border: 1px solid #e5e5e5;
+  width: 280px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.subscribe__cell {
+  border: 1px solid #e5e5e5;
+}
+
+.subscribe__package {
+  background-color: $background-small;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  &:first-line {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+}
+
+.subscribe__text {
+  line-height: 30px;
+}
