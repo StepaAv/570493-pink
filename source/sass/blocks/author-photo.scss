@@ -1,0 +1,23 @@
+.author-photo {
+  height: 330px;
+}
+
+.author-photo__author-name {
+  font-weight: bold;
+}
+
+.author-photo__time-ago {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.author-photo__author-text {
+  @include mfont-article;
+}
+
+.author-photo__likes-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+.competition__info-text {
+  height: 170px;
+}
+
+.competition__important-attention {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &:first-letter {
+    color: #d22856;
+  }
+}
+

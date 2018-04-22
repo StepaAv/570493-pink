@@ -1,27 +1,29 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-  url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'global.scss';
+@import 'blocks/author-photo.scss';
+@import 'blocks/button-submit.scss';
+@import 'blocks/button.scss';
+@import 'blocks/competition.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/download.scss';
+@import 'blocks/features.scss';
+@import 'blocks/form.scss';
+@import 'blocks/main-footer.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/page-main.scss';
+@import 'blocks/photo-editor.scss';
+@import 'blocks/photos.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/review.scss';
+@import 'blocks/site-list.scss';
+@import 'blocks/slider-nav.scss';
+@import 'blocks/social.scss';
+@import 'blocks/subscribe.scss';
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-  url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-  url("../fonts/opensanslight.woff") format("woff");
-  font-weight: light;
-  font-style: normal;
-}
 
-body {
-  font-family: "open sans" arial "sans-serif"
-}
+
