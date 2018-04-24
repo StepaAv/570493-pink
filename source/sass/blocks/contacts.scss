@@ -7,7 +7,8 @@
 }
 
 .contacts__item {
-  list-style-type: none;
+  @include list-reset;
+  @include padding-mobile;
 }
 
 .contacts__question {

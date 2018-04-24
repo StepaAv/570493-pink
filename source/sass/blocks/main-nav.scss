@@ -1,9 +1,22 @@
 .main-nav {
   background-color: $background-small;
   height: 324px;
+  width: 320px;
 }
 
 .main-nav__list {
-  list-style-type: none;
-  padding-left: 0px;
+  @include list-reset;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: $tablet-width;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+}
+

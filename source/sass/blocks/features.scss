@@ -3,11 +3,12 @@ box-shadow: $shadow2;
 }
 
 .features__list {
-  padding-left: 0px;
+  @include list-reset;
 }
 
 .features__item {
   list-style-type: none;
+  @include padding-mobile;
 }
 
 .features__slogan {
@@ -21,3 +22,30 @@ box-shadow: $shadow2;
   font-weight: bold;
   color: #000000;
 }
+
+.features__phone-pic {
+  display: block;
+  height: 485px;
+  width: 255px;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .features__wrapp {
+    display: flex;
+  }
+  .features__phone-pic {
+    order: 1;
+    width: 300px;
+  }
+  .features__list {
+    order: 2;
+    width: 320px;
+  }
+}
+

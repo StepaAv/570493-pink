@@ -1,3 +1,11 @@
 .page-header {
   box-shadow: $shadow2;
+  background-color: $background-small;
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
 }

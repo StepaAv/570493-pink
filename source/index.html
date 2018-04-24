@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -27,46 +28,49 @@
     <section class="download">
       <div class="download__promo"><img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="hand-pic download__hand-pic">
       </div>
-      <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение
-      </a>
-      <ul class="download__list">
-        <li class="download__item">
-          <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
+      <div class="download__wrapp">
+        <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
               <img src="http://placehold.it/150x100" width="#" height="#"  alt="Apple" class="download__link download__link-apple">
             </a>
-        </li>
-        <li class="download__item">
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru" class="download__logo download__logo--android">
+          </li>
+          <li class="download__item">
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru" class="download__logo download__logo--android">
               <img src="http://placehold.it/150x100" width="#" height="#"  alt="Android" class="download__link download__link-android">
             </a>
-        </li>
-        <li class="download__item">
-          <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="download__logo download__logo--windows">
+          </li>
+          <li class="download__item">
+            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="download__logo download__logo--windows">
               <img src="http://placehold.it/150x100" width="#" height="#"  alt="Windows" class="download__link download__link-windows">
             </a>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
       <p class="download__availability-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="features">
       <h2 class="visually-hidden">Особенности программы!</h2>
       <p class="features__slogan">Устали от серости мегаполиса?</p>
       <p class="features__slogan">Нам есть, что вам предложить!</p>
-      <ul class="features__list">
-        <li class="features__item">
-          <p class="features__name">Поднимает настроение</p>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="features__item">
-          <p class="features__name">Меняет мир вокруг</p>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="features__item">
-          <p class="features__name">Заводит новых друзей</p>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="phone-pic features__phone-pic">
+      <div class="features__wrapp">
+        <ul class="features__list">
+          <li class="features__item">
+            <p class="features__name">Поднимает настроение</p>
+            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <p class="features__name">Меняет мир вокруг</p>
+            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <p class="features__name">Заводит новых друзей</p>
+            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="features__phone-pic">
+      </div>
     </section>
     <section class="review">
       <h2 class="visually-hidden">Отзывы наших клиентов</h2>
@@ -93,17 +97,17 @@
             <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
           </td>
         </tr>
-          <tr class="subscribe__window">
-            <td class="subscribe__cell">
+        <tr class="subscribe__window">
+          <td class="subscribe__cell">
             <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
           </td>
         </tr>
         <tr class="subscribe__window">
           <td class="subscribe__cell">
-          <p class="subscribe__text subscribe__text--cross">Комментарии</p>
-        </td>
-      </tr>
-    </table>
+            <p class="subscribe__text subscribe__text--cross">Комментарии</p>
+          </td>
+        </tr>
+      </table>
       <p class="slider-nav subscribe__slider">
         <button type="button" class="slider-nav__dot"></button>
         <button type="button" class="slider-nav__dot"></button>
