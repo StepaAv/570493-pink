@@ -1,6 +1,7 @@
 .form {
   font-size: 14px;
   line-height: 30px;
+  box-shadow: $shadow2;
   &__label--redcaps {
     color: #d22856;
   }
@@ -32,4 +33,5 @@
   margin-left: 0px;
   margin-right: 0px;
   border: none;
+  box-shadow: $shadow3;
 }

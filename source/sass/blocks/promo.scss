@@ -1,6 +1,7 @@
 .promo {
-  background-image: $main-image;
   height: 238px;
+  background-image: $main-image;
+  box-shadow: $shadow3;
 }
 
 .promo__title {

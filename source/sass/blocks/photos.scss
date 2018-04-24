@@ -1,3 +1,8 @@
 .photos__text {
   line-height: 30px;
+  box-shadow: $shadow1;
+}
+
+.photos__wrapper {
+  box-shadow: $shadow2;
 }
