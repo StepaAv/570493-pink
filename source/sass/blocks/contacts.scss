@@ -28,3 +28,21 @@
   color: #d22856;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: $tablet-width;
+  }
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contacts__item {
+    width: 300px;
+  }
+  .contacts__question {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

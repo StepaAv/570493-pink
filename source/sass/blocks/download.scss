@@ -5,12 +5,9 @@
   box-shadow: $shadow1;
 }
 
-.download__list {
-  @include list-reset;
-}
-
 .download__item {
-  @include padding-mobile;
+  width: 70px;
+  height: 70px;
 }
 
 .download__promo {
@@ -21,15 +18,38 @@
 
 .download__availability-text {
   @include mfont-article;
-  @include padding-mobile;
+}
+
+.download__list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet-width) {
   .download {
     width: $tablet-width;
+    display: flex;
+    flex-direction: row-reverse;
   }
   .download__promo {
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  .download__mobile-hidden {
+    &::before {
+      content: "Взгляните на жизнь иначе!" ;
+    }
+  }
+  .download__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

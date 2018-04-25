@@ -4,6 +4,12 @@
   min-width: 320px;
 }
 
+.page-header__logo-image {
+  display: block;
+  margin-left: 10%;
+  margin-bottom: -30px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: $tablet-width;

@@ -13,3 +13,10 @@
   padding-right: 20px;
   padding-left: 20px;
 }
+
+@mixin not-visually-hidden {
+  position: static;
+  clip: auto;
+  clip: auto;
+  overflow: auto;
+}

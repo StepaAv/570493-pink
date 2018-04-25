@@ -14,3 +14,22 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 660px;
+  }
+  .review__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .review__author {
+    order: 2;
+  }
+  .review__text {
+    order: 1;
+  }
+  .review__slider {
+    order: 3;
+  }
+}

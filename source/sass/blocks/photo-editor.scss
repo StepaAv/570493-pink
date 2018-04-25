@@ -1,6 +1,6 @@
-.photo-editor {
+.photo-editor__wrapper {
   box-shadow: $shadow1;
-  height: 740px;
+  height: 550px;
 }
 
 .photo-editor__slogan {
@@ -10,4 +10,40 @@
 
 .photo-editor__tools-list {
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-editor__slogan {
+    height: 200px;
+  }
+  .photo-editor__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .photo-editor__controls {
+    display: flex;
+    flex-diretion: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 300px;
+    height: 500px;
+  }
+  .photo-editor__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    heigh: 250px;
+  }
+  .photo-editor__img-wrapper {
+    width: 300px;
+    height: 400px;
+  }
+  .photo-editor__tools-list {
+    width: 300px;
+    height: 250px;
+    @include list-reset;
+  }
+
+
 }

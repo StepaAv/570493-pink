@@ -2,6 +2,10 @@
 box-shadow: $shadow2;
 }
 
+.features__effect-wrapp {
+  display: none;
+}
+
 .features__list {
   @include list-reset;
 }
@@ -27,6 +31,8 @@ box-shadow: $shadow2;
   display: block;
   height: 485px;
   width: 255px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +51,21 @@ box-shadow: $shadow2;
   }
   .features__list {
     order: 2;
+    width: 320px;
+  }
+  .features__effect-wrapp {
+    display: flex;
+    min-height: 400px;
+    background-color: #f2f2f2;
+  }
+  .features__phone-pic {
+    width: 320px;
+    height: 290px;
+  }
+  .features__wrapp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 320px;
   }
 }

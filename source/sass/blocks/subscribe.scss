@@ -31,3 +31,12 @@
 .subscribe__text {
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .subscribe {
+    width: 660px;
+  }
+  .subscribe__slider {
+    display: none;
+  }
+}

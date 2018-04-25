@@ -6,3 +6,28 @@
 .photos__wrapper {
   box-shadow: $shadow2;
 }
+
+@media (min-width: $tablet-width) {
+  .photos__text {
+  min-height: 230px;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+  }
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .photos__wrapper {
+    width: 300px;
+    height: 454px;
+      &:first-of-type {
+        width: 660px;
+        height: 630px;
+     }
+  }
+  .author-photo--day-photo {
+    height: 510px;
+  }
+}
