@@ -2,7 +2,7 @@
 box-shadow: $shadow2;
 }
 
-.features__effect-wrapp {
+.features__effect-wrap {
   display: none;
 }
 
@@ -12,7 +12,6 @@ box-shadow: $shadow2;
 
 .features__item {
   list-style-type: none;
-  @include padding-mobile;
 }
 
 .features__slogan {
@@ -35,6 +34,11 @@ box-shadow: $shadow2;
   margin-left: auto;
 }
 
+.features__phone-pic--hidden {
+    display: none;
+}
+
+
 @media (min-width: $tablet-width) {
   .features {
     width: $tablet-width;
@@ -42,7 +46,7 @@ box-shadow: $shadow2;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .features__wrapp {
+  .features__wrap {
     display: flex;
   }
   .features__phone-pic {
@@ -53,7 +57,7 @@ box-shadow: $shadow2;
     order: 2;
     width: 320px;
   }
-  .features__effect-wrapp {
+  .features__effect-wrap {
     display: flex;
     min-height: 400px;
     background-color: #f2f2f2;
@@ -62,11 +66,42 @@ box-shadow: $shadow2;
     width: 320px;
     height: 290px;
   }
-  .features__wrapp-text {
+  .features__wrap-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: 940px;
+  }
+  .features__phone-pic--hidden {
+    display: inline;
+  }
+  .features__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .features__phone-pic {
+    width: 200px;
+    display: block;
+  }
+  .features__list {
+    display: flex;
+    width: 940px;
+    height: 220px;
+  }
+  .features__phone-wrap {
+    display: flex;
+  }
+  .features__wrap-text {
+    width: 550px;
+  }
+  .features__timer-pic {
+    width: 370px;
   }
 }
 

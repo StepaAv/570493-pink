@@ -21,3 +21,17 @@
   color: #d22856;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .author-photo--day-photo {
+    width: 660px;
+    height: 510px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-photo--day-photo {
+    width: 1200px;
+    height: 510px;
+  }
+}

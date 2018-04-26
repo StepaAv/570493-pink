@@ -1,6 +1,5 @@
 .main-nav {
   background-color: $background-small;
-  height: 324px;
   width: 320px;
 }
 
@@ -14,13 +13,31 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: $tablet-width;
+    width: 660px;
   }
   .main-nav__list {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   }
 
+}
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 940px;
+  }
+  .main-nav__wrapper {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
 }
 

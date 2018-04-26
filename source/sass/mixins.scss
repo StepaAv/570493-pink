@@ -20,3 +20,8 @@
   clip: auto;
   overflow: auto;
 }
+
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

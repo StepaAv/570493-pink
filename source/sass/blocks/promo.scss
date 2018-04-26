@@ -12,3 +12,10 @@
   padding-top: 30px;
   margin-top: 0px;
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 940px;
+  }
+}
+

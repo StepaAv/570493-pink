@@ -11,3 +11,10 @@
     height: 130px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: 940px;
+    @include margin-auto;
+  }
+}

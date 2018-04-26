@@ -1,6 +1,6 @@
 .review {
   box-shadow: $shadow1;
-  @include padding-mobile;
+  margin: 0 auto;
 }
 
 .review__author {
@@ -31,5 +31,18 @@
   }
   .review__slider {
     order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 940px;
+    margin: 0 auto;
+    margin-left: 0px;  // если убрать, то из преисподни придет марджин на 10 пикселей
+  }
+  .review__wrap {
+    width: 820px;
+    justify-content: center;
+    @include margin-auto;
   }
 }

@@ -12,6 +12,14 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
+    width: 660px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 940px;
+    height: 110px;
+  }
+}
+

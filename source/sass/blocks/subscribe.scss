@@ -40,3 +40,9 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+    width: 940px;
+  }
+}

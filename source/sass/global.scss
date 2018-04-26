@@ -28,8 +28,14 @@ html {
  *::after {
    box-sizing: inherit;
  }
+
 @media (min-width: $tablet-width) {
   body {
-    width: $tablet-width;
+    width: 660px;
+  }
+}
+@media (min-width: $desktop-width) {
+  body {
+    width: 960px;
   }
 }

@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    width: $tablet-width;
+    width: 660px;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -51,5 +51,21 @@
   .download__list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    width: 940px;
+    min-height: 850px;
+    justify-content: center;
+    background-image: $main-image;
+    background-size: 100%;
+  }
+  .download__wrap {
+    width: 380px;
+  }
+  .download__promo {
+    background-image: none;
   }
 }

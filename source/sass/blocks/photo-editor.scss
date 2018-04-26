@@ -44,6 +44,25 @@
     height: 250px;
     @include list-reset;
   }
+}
 
-
+@media (min-width: $desktop-width) {
+  .photo-editor {
+    width: 940px;
+    @include margin-auto;
+  }
+  .photo-editor__slogan {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photo-editor__btn-wrapper {
+    flex-direction: row;
+    width: 410px;
+  }
+  .photo-editor__submit-btn {
+    width: 200px;
+  }
+  .photo-editor__cancel-btn {
+    width: 200px;
+  }
 }
