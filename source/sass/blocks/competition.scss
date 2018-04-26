@@ -15,8 +15,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .competition__important-attention {
+    text-align: right;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .competition {
     width: 960px;
+  }
+  .competition__important-attention {
+    text-align: right;
   }
 }

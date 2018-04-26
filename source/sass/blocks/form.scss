@@ -40,6 +40,7 @@
     width: 660px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .competition__info-text {
     height: 230px;
@@ -85,19 +86,18 @@
     margin-left: 20px;
     order: 6;
   }
-  .form__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+
   .form__item {
     padding-bottom: 40px;
   }
-  .competition__important-attention {
-    margin-left: 430px;
-    margin-top: -45px;
-    margin-bottom: 50px;
+
+  .form__list--names {
+    dispaly: flex;
+    flex-direction: column;
+    justify-content: center;
+    & .form__item {
+      width: 470px;
+    }
   }
 }
 
@@ -116,15 +116,17 @@
       padding-bottom: 20px;
     }
     &:nth-of-type(2) {
-      height: 230px;
       width: 940px;
       order: 4;
       border: 1px solid black;
       padding-bottom: 20px;
-      & .form_list {
+      & .form__list {
+        max-height: 230px;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
       }
     }
     &:nth-of-type(3) {
@@ -156,5 +158,40 @@
     & textarea {
       width: 500px;
     }
+  }
+  .form__list--achiev {
+    & .form__item {
+      width: 260px;
+      height: 85px;
+    }
+  }
+  .form__list--contacts {
+    height: 159px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    & .form__item {
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      jsutify-content: flex-start;
+      & .form__label {
+        display: block;
+        width: 150px;
+      }
+      & .form__input {
+        width: 374px;
+      }
+    }
+  }
+  .form__list--names {
+    & .form__item {
+      text-align: left;
+    }
+  }
+  .form__submit {
+    margin-right: auto;
   }
 }
