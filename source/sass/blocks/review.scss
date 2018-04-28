@@ -4,7 +4,7 @@
 }
 
 .review__author {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
@@ -32,6 +32,14 @@
   .review__slider {
     order: 3;
   }
+  .review__author {
+    &::after {
+      content: "25 лет, водитель трамвая";
+      font-size: 14px;
+      color: #283645;
+      font-weight: normal;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -44,5 +52,11 @@
     width: 820px;
     justify-content: center;
     @include margin-auto;
+  }
+  .review__author {
+    font-size: 24px;
+    &::after {
+      font-size: 18px;
+    }
   }
 }

@@ -13,9 +13,20 @@
   margin-top: 0px;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__title {
+    width: 620px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .promo {
     width: 940px;
+  }
+  .promo__title {
+    margin: 0 auto;
   }
 }
 

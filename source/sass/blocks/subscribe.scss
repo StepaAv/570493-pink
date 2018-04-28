@@ -1,15 +1,35 @@
 .subscribe {
   text-transform: uppercase;
   box-shadow: $shadow2;
+  overflow: scroll;
 }
 
-.subscribe__table {
+.subscribe__table--mobile {
   border: 1px solid #e5e5e5;
-  width: 280px;
-  height: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 840px;
+  min-height: 320px;
   border-collapse: collapse;
+  table-layout: fixed;
+  & td {
+    width: 280px;
+    height: 60px;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    padding-left: 20px;
+  }
+  & th {
+    width: 280px;
+    height: 100px;
+    color: #ffffff;
+    background-color: #283645;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+  & th:first-line {
+    font-weight: bold;
+  }
 }
 
 .subscribe__cell {
@@ -32,17 +52,73 @@
   line-height: 30px;
 }
 
+.subscribe__table--tablet {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .subscribe {
     width: 660px;
+    height: 420px;
   }
   .subscribe__slider {
     display: none;
+  }
+  .subscribe__table--mobile {
+    display: none;
+  }
+  .subscribe__table--tablet {
+    width: 620px;
+    height: 220px;
+    display: block;
+    padding-left: 20px;
+    padding-top: 110px;
+    border-collapse: collapse;
+    & td {
+      width: 150px;
+      height: 47px;
+      text-transform: none;
+      text-align: left;
+      padding-left: 10px;
+    }
+    & th {
+      width: 150px;
+      height: 60px;
+      color: #ffffff;
+      background-color: #283645;
+      text-transform: uppercase;
+      font-weight: normal;
+      line-height: 30px;
+      font-size: 16px;
+    }
+    & th:first-line {
+      font-weight: bold;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .subscribe {
     width: 940px;
+  }
+  .subscribe__slider {
+    display: none;
+  }
+    .subscribe__table--desktop {
+    width: 940px;
+    height: 280px;
+    display: block;
+    padding-top: 70px;
+    padding-right: 10px;
+    border-collapse: collapse;
+    & td {
+      width: 234px;
+      height: 66px;
+      foont-size: 18px;
+    }
+    & th {
+      width: 234px;
+      height: 96px;
+    }
   }
 }
