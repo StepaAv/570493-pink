@@ -102,12 +102,16 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    width: 960px;
+    width: 100%;
   }
   .features__wrap {
+    width: 960px;
     display: flex;
     flex-direction: column;
     min-height: 600px;
+  }
+  .features__slogan-block {
+    width: 960px;
   }
   .features__phone-pic {
     display: none;
@@ -166,6 +170,7 @@
     width: 260px;
   }
   .features__slogan {
+    width: 100%;
     font-size: 50px;
     line-height: 68px;
     margin-bottom: 10px;

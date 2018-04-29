@@ -1,6 +1,7 @@
 .review {
   box-shadow: $shadow1;
   margin: 0 auto;
+  width: 100%;
 }
 
 .review__author {
@@ -45,7 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
   }
   .review__wrap {

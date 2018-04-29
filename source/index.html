@@ -11,18 +11,20 @@
 <body>
   <header class="page-header page-header--index">
     <div class="container">
-      <a href="#" class="page-header__logo"><img src="http://placehold.it/30x30" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__containe">
+        <a href="#" class="page-header__logo"><img src="http://placehold.it/30x30" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="page-main page-main--index">
@@ -56,8 +58,10 @@
       </section>
       <section class="features">
         <h2 class="visually-hidden">Особенности программы!</h2>
-        <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что вам предложить!</p>
+        <div class="features__slogan-block">
+          <p class="features__slogan">Устали от серости мегаполиса?</p>
+          <p class="features__slogan">Нам есть, что вам предложить!</p>
+        </div>
         <div class="features__wrap">
           <ul class="features__list">
             <li class="features__item">

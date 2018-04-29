@@ -52,7 +52,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    width: 100%;
+  }
+  .contacts__list {
     width: 960px;
+    margin: 0 auto;
   }
   .contacts__item {
     &:nth-of-type(1) {

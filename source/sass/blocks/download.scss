@@ -1,5 +1,8 @@
 .download {
   background-color: $background-small;
+  background-image: $main-image;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: #ffffff;
   box-shadow: $shadow1;
   margin: 0 auto;
@@ -11,7 +14,6 @@
 }
 
 .download__promo {
-  background-image: $main-image;
   width: 320px;
   height: 462px;
 }
@@ -79,7 +81,7 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    width: 960px;
+    width: 100%;
     min-height: 850px;
     justify-content: center;
     background-image: $main-image;

@@ -10,9 +10,8 @@
 @media (min-width: $tablet-width) {
   .photos__text {
     min-height: 230px;
-    padding-left: 110px;
-    padding-right: 110px;
     padding-top: 50px;
+    width: 660px;
   }
   .photos {
     display: flex;
@@ -41,9 +40,10 @@
       width: 100%;
       height: 630px;
     }
-    .photos__text {
-      width: 960px;
-      padding: 0px;
-    }
+  }
+  .photos__text {
+    width: 960px;
+    padding: 0px;
+    text-align: center;
   }
 }
