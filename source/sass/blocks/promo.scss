@@ -2,6 +2,8 @@
   height: 238px;
   background-image: $main-image;
   box-shadow: $shadow3;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .promo__title {
@@ -15,18 +17,13 @@
 
 @media (min-width: $tablet-width) {
   .promo__title {
-    width: 620px;
     font-size: 50px;
     line-height: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .promo {
-    width: 940px;
-  }
   .promo__title {
     margin: 0 auto;
   }
 }
-

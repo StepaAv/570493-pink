@@ -2,6 +2,7 @@
   background-color: $background-small;
   color: #ffffff;
   box-shadow: $shadow1;
+  margin: 0 auto;
 }
 
 .download__item {
@@ -78,7 +79,7 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    width: 940px;
+    width: 960px;
     min-height: 850px;
     justify-content: center;
     background-image: $main-image;

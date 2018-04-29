@@ -18,6 +18,7 @@
 @media (min-width: $tablet-width) {
   .review {
     width: 660px;
+    margin: 0 auto;
   }
   .review__wrap {
     display: flex;
@@ -44,9 +45,8 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
-    margin-left: 0px;  // если убрать, то из преисподни придет марджин на 10 пикселей
   }
   .review__wrap {
     width: 820px;

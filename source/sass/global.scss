@@ -3,9 +3,7 @@ body {
   color: $base-color;
   background-color: $background;
   text-align: center;
-  width: $mobile-width;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -29,13 +27,4 @@ html {
    box-sizing: inherit;
  }
 
-@media (min-width: $tablet-width) {
-  body {
-    width: 660px;
-  }
-}
-@media (min-width: $desktop-width) {
-  body {
-    width: 960px;
-  }
-}
+

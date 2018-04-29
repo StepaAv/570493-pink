@@ -1,5 +1,6 @@
 .features {
-box-shadow: $shadow2;
+  box-shadow: $shadow2;
+  margin: 0 auto;
 }
 
 .features__effect-wrap {
@@ -35,7 +36,7 @@ box-shadow: $shadow2;
 }
 
 .features__phone-pic--hidden {
-    display: none;
+  display: none;
 }
 
 
@@ -101,7 +102,7 @@ box-shadow: $shadow2;
 
 @media (min-width: $desktop-width) {
   .features {
-    width: 940px;
+    width: 960px;
   }
   .features__wrap {
     display: flex;
@@ -121,7 +122,7 @@ box-shadow: $shadow2;
     &:nth-of-type(1) {
       &::before {
         content: " ";
-        background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg") ;
+        background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg");
         width: 190px;
         height: 310px;
         display: block;
@@ -129,10 +130,10 @@ box-shadow: $shadow2;
         background-size: 100% 100%;
       }
     }
-  &:nth-of-type(2) {
+    &:nth-of-type(2) {
       &::before {
         content: " ";
-        background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg") ;
+        background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg");
         width: 190px;
         height: 310px;
         display: block;
@@ -140,10 +141,10 @@ box-shadow: $shadow2;
         background-size: 100% 100%;
       }
     }
-  &:nth-of-type(3) {
+    &:nth-of-type(3) {
       &::before {
         content: " ";
-        background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg") ;
+        background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg");
         width: 190px;
         height: 310px;
         display: block;
@@ -178,4 +179,3 @@ box-shadow: $shadow2;
     width: 420px;
   }
 }
-

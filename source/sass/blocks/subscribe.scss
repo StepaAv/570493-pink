@@ -2,6 +2,7 @@
   text-transform: uppercase;
   box-shadow: $shadow2;
   overflow: scroll;
+  margin: 0 auto;
 }
 
 .subscribe__table--mobile {
@@ -99,12 +100,12 @@
 
 @media (min-width: $desktop-width) {
   .subscribe {
-    width: 940px;
+    width: 960px;
   }
   .subscribe__slider {
     display: none;
   }
-    .subscribe__table--desktop {
+  .subscribe__table--desktop {
     width: 940px;
     height: 280px;
     display: block;
