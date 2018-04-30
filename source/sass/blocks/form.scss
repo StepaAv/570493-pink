@@ -39,10 +39,10 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    width: 660px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
   }
 
   .form__field {
@@ -119,7 +119,8 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 940px;
+    width: 100%;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
