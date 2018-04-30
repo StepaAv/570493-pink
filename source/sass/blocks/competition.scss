@@ -1,6 +1,7 @@
 .competition {
   //box-shadow: $shadow1;
   margin: 0 auto;
+  width: 320px;
 }
 
 .competition__info-text {
@@ -17,6 +18,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .competition {
+    width: 660px;
+  }
   .competition__important-attention {
     text-align: right;
     margin-top: -40px;
@@ -26,7 +30,7 @@
 
 @media (min-width: $desktop-width) {
   .competition {
-    width: 940px;
+    width: 100%;
   }
   .competition__important-attention {
     text-align: right;

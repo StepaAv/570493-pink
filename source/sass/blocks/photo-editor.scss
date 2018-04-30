@@ -1,9 +1,13 @@
 .photo-editor__wrapper {
+  width: 320px;
+  margin: 0 auto;
   box-shadow: $shadow1;
   height: 550px;
 }
 
 .photo-editor__slogan {
+  width: 320px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
 }
@@ -13,8 +17,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-editor__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
   .photo-editor__slogan {
     height: 200px;
+    width: 660px;
   }
   .photo-editor__form {
     display: flex;
@@ -47,8 +56,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo-editor__slogan {
+    width: 100%
+  }
+  .photo-editor__wrapper {
+    width: 100%;
+  }
   .photo-editor {
-    width: 960px;
+    width: 100%;
     @include margin-auto;
   }
   .photo-editor__slogan {

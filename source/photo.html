@@ -11,18 +11,20 @@
 <body>
   <header class="page-header page-header--photos">
     <div class="container">
-      <a href="#" class="page-header__logo"><img src="#" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__container">
+        <a href="#" class="page-header__logo"><img src="#" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
+              <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="page-main page-main--photo">
@@ -80,8 +82,10 @@
           <p class="author-photo__author-text">Всем GM и взаимные лайки!</p>
           <p class="author-photo__likes-text">Нравиться: 2560</p>
         </div>
-      </section>
-      <section class="photo-editor">
+    </div>
+    </section>
+    <section class="photo-editor">
+      <div class="container">
         <p class="photo-editor__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <div class="photo-editor__wrapper">
           <form method="get" action="https://echo.htmlacademy.ru" class="photo-editor__form">
@@ -108,33 +112,35 @@
             </div>
           </form>
         </div>
-      </section>
-      <footer class="main-footer">
+      </div>
+    </section>
+    <footer class="main-footer">
+     <div class="container">
         <a href="index.html" class="main-footer__pink-link"><img src="#" alt="Пинк" class="main-footer__pink-logo"></a>
-        <div class="social main-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="https://www.twitter.com" class="social__link social__link--twitter" aria-label="twitter">
-                <p class="visually-hidden">Twitter</p>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.facebook.com" class="social__link social__link--facebook" aria-label="facebook">
-                <p class="visually-hidden">Facebook</p>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.youtube.com" class="social__link social__link--youtube" aria-label="youtube">
-                <p class="visually-hidden">Youtube</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__academy-link">
-         <img src="#" alt="Html academy" class="main-footer__academy-logo">
-       </a>
-      </footer>
-    </div>
+       <div class="social main-footer__social">
+         <ul class="social__list">
+           <li class="social__item">
+             <a href="https://www.twitter.com" class="social__link social__link--twitter" aria-label="twitter">
+               <p class="visually-hidden">Twitter</p>
+             </a>
+           </li>
+           <li class="social__item">
+             <a href="https://www.facebook.com" class="social__link social__link--facebook" aria-label="facebook">
+               <p class="visually-hidden">Facebook</p>
+             </a>
+           </li>
+           <li class="social__item">
+             <a href="https://www.youtube.com" class="social__link social__link--youtube" aria-label="youtube">
+               <p class="visually-hidden">Youtube</p>
+             </a>
+           </li>
+         </ul>
+       </div>
+       <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__academy-link">
+          <img src="#" alt="Html academy" class="main-footer__academy-logo">
+        </a>
+     </div>
+    </footer>
   </main>
 </body>
 
