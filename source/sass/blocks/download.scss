@@ -1,22 +1,113 @@
 .download {
   background-color: $background-small;
+  background-image: $main-image;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: #ffffff;
-}
-
-.download__list {
-  padding-left: 0px;
+  box-shadow: $shadow1;
+  margin: 0 auto;
+  width: 320px;
 }
 
 .download__item {
-  list-style-type: none;
+  width: 70px;
+  height: 70px;
 }
 
 .download__promo {
-  background-image: $main-image;
   width: 320px;
   height: 462px;
 }
 
 .download__availability-text {
   @include mfont-article;
+}
+
+.download__list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    width: 660px;
+    min-height: 620px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .download__promo {
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .download__mobile-hidden {
+    width: 230px;
+    align-self: center;
+    padding-bottom: 30px;
+    &::before {
+      content: "Взгляните на жизнь иначе!";
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+  .download__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    & .download__item {
+      margin: 0 15px;
+    }
+  }
+  .download__button {
+    margin-bottom: 30px;
+  }
+  .download__availability-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    width: 100%;
+    min-height: 850px;
+    justify-content: center;
+    background-image: $main-image;
+    background-size: 100%;
+  }
+  .download__wrap {
+    width: 380px;
+  }
+  .download__promo {
+    background-image: none;
+  }
+  .download__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .download__button {
+    height: 55px;
+  }
+  .download__mobile-hidden {
+    &::before {
+      content: "Взгляните на жизнь иначе!";
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
 }

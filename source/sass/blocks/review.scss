@@ -1,5 +1,11 @@
+.review {
+  box-shadow: $shadow1;
+  margin: 0 auto;
+  width: 320px;
+}
+
 .review__author {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
@@ -8,4 +14,50 @@
 .review__text {
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 660px;
+    margin: 0 auto;
+  }
+  .review__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .review__author {
+    order: 2;
+  }
+  .review__text {
+    order: 1;
+  }
+  .review__slider {
+    order: 3;
+  }
+  .review__author {
+    &::after {
+      content: "25 лет, водитель трамвая";
+      font-size: 14px;
+      color: #283645;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .review__wrap {
+    width: 100%;
+    justify-content: center;
+    @include margin-auto;
+  }
+  .review__author {
+    font-size: 24px;
+    &::after {
+      font-size: 18px;
+    }
+  }
 }

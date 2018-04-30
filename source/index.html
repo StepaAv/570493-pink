@@ -4,130 +4,240 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
 </head>
 
 <body>
-  <header class="page-header">
-    <a href="#" class="page-header__logo"><img src="#" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
-        </ul>
+  <header class="page-header page-header--index">
+    <div class="container">
+      <div class="page-header__container">
+        <a href="#" class="page-header__logo"><img src="http://placehold.it/30x30" alt="Пинк" class="page-header__logo-image" width="#" height="#"></a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   </header>
   <main class="page-main page-main--index">
     <h1 class="visually-hidden">"Пинк" Взгляните на жизнь иначе!</h1>
     <section class="download">
-      <div class="download__promo"><img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="hand-pic download__hand-pic">
+      <div class="container">
+        <div class="download__promo"><img src="http://placehold.it/150x70" alt="#" width="#" height="#" class="hand-pic download__hand-pic">
+        </div>
+        <div class="download__wrap">
+          <div class="download__mobile-hidden"></div>
+          <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
+                  <img src="http://placehold.it/70x70" width="#" height="#"  alt="Apple" class="download__link download__link-apple">
+                </a>
+            </li>
+            <li class="download__item">
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru" class="download__logo download__logo--android">
+                  <img src="http://placehold.it/70x70" width="#" height="#"  alt="Android" class="download__link download__link-android">
+                </a>
+            </li>
+            <li class="download__item">
+              <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="download__logo download__logo--windows">
+                  <img src="http://placehold.it/70x70" width="#" height="#"  alt="Windows" class="download__link download__link-windows">
+                </a>
+            </li>
+          </ul>
+          <p class="download__availability-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
-      <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение
-      </a>
-      <ul class="download__list">
-        <li class="download__item">
-          <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
-              <img src="http://placehold.it/150x100" width="#" height="#"  alt="Apple" class="download__link download__link-apple">
-            </a>
-        </li>
-        <li class="download__item">
-          <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru" class="download__logo download__logo--android">
-              <img src="http://placehold.it/150x100" width="#" height="#"  alt="Android" class="download__link download__link-android">
-            </a>
-        </li>
-        <li class="download__item">
-          <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" class="download__logo download__logo--windows">
-              <img src="http://placehold.it/150x100" width="#" height="#"  alt="Windows" class="download__link download__link-windows">
-            </a>
-        </li>
-      </ul>
-      <p class="download__availability-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="features">
-      <h2 class="visually-hidden">Особенности программы!</h2>
-      <p class="features__slogan">Устали от серости мегаполиса?</p>
-      <p class="features__slogan">Нам есть, что вам предложить!</p>
-      <ul class="features__list">
-        <li class="features__item">
-          <p class="features__name">Поднимает настроение</p>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="features__item">
-          <p class="features__name">Меняет мир вокруг</p>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="features__item">
-          <p class="features__name">Заводит новых друзей</p>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="phone-pic features__phone-pic">
+      <div class="container">
+        <h2 class="visually-hidden">Особенности программы!</h2>
+        <div class="features__slogan-block">
+          <p class="features__slogan">Устали от серости мегаполиса?</p>
+          <p class="features__slogan">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="features__wrap">
+          <ul class="features__list">
+            <li class="features__item">
+              <p class="features__name">Поднимает настроение</p>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <p class="features__name">Меняет мир вокруг</p>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <p class="features__name">Заводит новых друзей</p>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="features__phone-pic">
+        </div>
+        <div class="features__effect-wrap">
+          <img src="http://placehold.it/150x100" alt="#" width="#" height="#" class="features__timer-pic">
+          <div class="features__wrap-text">
+            <h3 class="features__effect-title"> Эффект на 24 часа!</h3>
+            <p class="features__effect-text">Британские ученые провели исследованияи доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#" class="features__effect-link">Узнать больше об исследовании</a>
+          </div>
+        </div>
     </section>
     <section class="review">
-      <h2 class="visually-hidden">Отзывы наших клиентов</h2>
-      <div class="review__wrap">
-        <p class="review__author">Николай Петров</p>
-        <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <div class="container">
+        <h2 class="visually-hidden">Отзывы наших клиентов</h2>
+        <div class="review__wrap">
+          <p class="review__author">Николай Петров
+            <br>
+          </p>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <p class="slider-nav review__slider">
+          <button type="button" class="slider-nav__dot"></button>
+          <button type="button" class="slider-nav__dot"></button>
+          <button type="button" class="slider-nav__dot"></button>
+        </p>
       </div>
-      <p class="slider-nav review__slider">
-        <button type="button" class="slider-nav__dot"></button>
-        <button type="button" class="slider-nav__dot"></button>
-        <button type="button" class="slider-nav__dot"></button>
-      </p>
     </section>
     <section class="subscribe">
-      <table class="subscribe__table">
-        <tr class="subscribe__window">
-          <td class="subscribe__cell">
-            <p class="subscribe__package">Стандарт
-              <br>3,99 Usd</p>
-          </td>
-        </tr>
-        <tr class="subscribe__window">
-          <td class="subscribe__cell">
-            <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
-          </td>
-        </tr>
+      <div class="container">
+        <table class="subscribe__table subscribe__table--mobile">
+          <tr class="subscribe__window">
+            <th class="subscribe__cell">База
+              <br>1,99 Usd</th>
+            <th class="subscribe__cell">
+              <p class="subscribe__package">Стандарт
+                <br>3,99 Usd</p>
+              <th class="subscribe__cell">Анлим
+                <br>9,99 Usd</th>
+            </th>
+          </tr>
           <tr class="subscribe__window">
             <td class="subscribe__cell">
-            <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
-          </td>
-        </tr>
-        <tr class="subscribe__window">
-          <td class="subscribe__cell">
-          <p class="subscribe__text subscribe__text--cross">Комментарии</p>
-        </td>
-      </tr>
-    </table>
-      <p class="slider-nav subscribe__slider">
-        <button type="button" class="slider-nav__dot"></button>
-        <button type="button" class="slider-nav__dot"></button>
-        <button type="button" class="slider-nav__dot"></button>
-      </p>
+              <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+            </td>
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+            </td>
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+            </td>
+          </tr>
+          <tr class="subscribe__window">
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cross">Смайлики</p>
+            </td>
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
+            </td>
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
+            </td>
+          </tr>
+          <tr class="subscribe__window">
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cross">Комментарии</p>
+            </td>
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cross">Комментарии</p>
+            </td>
+            <td class="subscribe__cell">
+              <p class="subscribe__text subscribe__text--cheked">Комментарии</p>
+            </td>
+          </tr>
+        </table>
+        <div class="subscribe__table-wrap">
+          <table class="subscribe__table subscribe__table--tablet subscribe__table--desktop">
+            <tr class="subscribe__window">
+              <td></td>
+              <th class="subscribe__cell">База
+                <br>1,99 Usd</th>
+              <th class="subscribe__cell">Стандарт
+                <br>3.99 Usd</th>
+              <th class="subscribe__cell">Анлим
+                <br>9,99 Usd</th>
+            </tr>
+            <tr class="subscribe__window">
+              <td class="subscribe__cell">Розовый фильтр</td>
+              <td class="subscribe__cell">+</td>
+              <td class="subscribe__cell">+</td>
+              <td class="subscribe__cell">+</td>
+            </tr>
+            <tr class="subscribe__window">
+              <td class="subscribe__cell">Смайлики</td>
+              <td class="subscribe__cell">-</td>
+              <td class="subscribe__cell">+</td>
+              <td class="subscribe__cell">+</td>
+            </tr>
+            <tr class="subscribe__window">
+              <td class="subscribe__cell">Комментарии</td>
+              <td class="subscribe__cell">-</td>
+              <td class="subscribe__cell">-</td>
+              <td class="subscribe__cell">+</td>
+            </tr>
+          </table>
+        </div>
+        <p class="slider-nav subscribe__slider">
+          <button type="button" class="slider-nav__dot"></button>
+          <button type="button" class="slider-nav__dot"></button>
+          <button type="button" class="slider-nav__dot"></button>
+        </p>
+      </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__question">Остались вопросы? Свяжитесь с нами!</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <p class="contacts__text">Звоните:</p>
-          <a href="tel:+78125556666 " class="contacts__adress ">+7(812)-555-66-66</a>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__text">Пишите:</p>
-          <a href="mailto:mail@htmlacademy.ru " class="contacts__adress ">mail@htmlacademy.ru</a>
-        </li>
-        <li class="contacts__item ">
-          <p class="contacts__text ">Приезжайте в гости:</p>
-          <a href="https://www.google.ru/maps " class="contacts__adress ">ул. Большая<br> Конюшенная, 19/8</a>
-        </li>
-      </ul>
-      <img src="http://placehold.it/150x100 " alt="# " class="contacts__map ">
+      <div class="container">
+        <h2 class="contacts__question">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__text">Звоните:</p>
+            <a href="tel:+78125556666 " class="contacts__adress ">+7(812)-555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text">Пишите:</p>
+            <a href="mailto:mail@htmlacademy.ru " class="contacts__adress ">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item ">
+            <p class="contacts__text ">Приезжайте в гости:</p>
+            <a href="https://www.google.ru/maps " class="contacts__adress ">ул. Большая<br> Конюшенная, 19/8</a>
+          </li>
+        </ul>
+        <img src="http://placehold.it/150x100 " alt="# " class="contacts__map ">
+      </div>
     </section>
+    <footer class="main-footer main-footer--index">
+      <div class="container">
+        <a href="index.html" class="main-footer__pink-link"><img src="#" alt="Пинк" class="main-footer__pink-logo"></a>
+        <div class="social main-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://www.twitter.com" class="social__link social__link--twitter" aria-label="twitter">
+                <p class="visually-hidden">Twitter</p>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com" class="social__link social__link--facebook" aria-label="facebook">
+                <p class="visually-hidden">Facebook</p>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.youtube.com" class="social__link social__link--youtube" aria-label="youtube">
+                <p class="visually-hidden">Youtube</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__academy-link">
+           <img src="#" alt="Html academy" class="main-footer__academy-logo">
+         </a>
+      </div>
+    </footer>
   </main>
 </body>
 

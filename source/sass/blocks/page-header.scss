@@ -1,0 +1,30 @@
+.page-header {
+  box-shadow: $shadow2;
+  background-color: $background-small;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo-image {
+  display: block;
+  margin-left: 10%;
+  margin-bottom: -30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 100%;
+    height: 110px;
+    background-color: $background-small;
+  }
+  .page-header--photos {
+    width: 100%;
+  }
+}

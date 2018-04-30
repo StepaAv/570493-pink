@@ -1,9 +1,44 @@
-.main-nav {
+  .main-nav {
   background-color: $background-small;
-  height: 324px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  margin-left: 70%;
 }
 
 .main-nav__list {
-  list-style-type: none;
-  padding-left: 0px;
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 660px;
+  }
+  .main-nav__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
 }

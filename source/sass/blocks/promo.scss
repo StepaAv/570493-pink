@@ -1,6 +1,9 @@
 .promo {
-  background-image: $main-image;
   height: 238px;
+  background-image: $main-image;
+  box-shadow: $shadow3;
+  margin: 0 auto;
+  width: 320px;
 }
 
 .promo__title {
@@ -10,4 +13,26 @@
   color: #ffffff;
   padding-top: 30px;
   margin-top: 0px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 660px;
+  }
+  .promo__title {
+    font-size: 50px;
+    line-height: 60px;
+    // width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 100%;
+  }
+  .promo__title {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
