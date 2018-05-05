@@ -1,5 +1,6 @@
 .site-list__item {
-  height: 62px;
+  height: 64px;
+  padding-top: 25px;
   & a {
     font-size: 18px;
     line-height: 32px;
@@ -10,3 +11,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    & a {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: normal;
+      text-transform: none;
+      font-weight: regular;
+    }
+  }
+}

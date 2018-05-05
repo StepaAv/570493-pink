@@ -20,7 +20,7 @@
               <li class="site-list__item site-list__item--active"><a>Главная</a></li>
               <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
               <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
             </ul>
           </div>
         </nav>
@@ -30,12 +30,14 @@
   <main class="page-main page-main--index">
     <h1 class="visually-hidden">"Пинк" Взгляните на жизнь иначе!</h1>
     <section class="download">
-      <div class="container">
-        <div class="download__promo"><img src="http://placehold.it/150x70" alt="#" width="#" height="#" class="hand-pic download__hand-pic">
+      <div class="container download__container">
+        <div class="download__promo"><img src="#" alt="#" width="100" height="100" class="hand-pic download__hand-pic">
         </div>
         <div class="download__wrap">
-          <div class="download__mobile-hidden"></div>
-          <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение</a>
+          <!-- <div class="download__mobile-hidden"></div> -->
+         <div class="download__button-wrap">
+            <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение</a>
+         </div>
           <ul class="download__list">
             <li class="download__item">
               <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
@@ -196,16 +198,16 @@
         <h2 class="contacts__question">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <p class="contacts__text">Звоните:</p>
-            <a href="tel:+78125556666 " class="contacts__adress ">+7(812)-555-66-66</a>
+            <p class="contacts__text contacts__text--call">Звоните:</p>
+            <a href="tel:+78125556666 " class="contacts__adress ">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <p class="contacts__text">Пишите:</p>
+            <p class="contacts__text contacts__text--write">Пишите:</p>
             <a href="mailto:mail@htmlacademy.ru " class="contacts__adress ">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item ">
-            <p class="contacts__text ">Приезжайте в гости:</p>
-            <a href="https://www.google.ru/maps " class="contacts__adress ">ул. Большая<br> Конюшенная, 19/8</a>
+            <p class="contacts__text contacts__text--arive">Приезжайте в гости:</p>
+            <a href="https://www.google.ru/maps " class="contacts__adress contacts__adress--street ">ул. Большая<br> Конюшенная, 19/8</a>
           </li>
         </ul>
         <img src="http://placehold.it/150x100 " alt="# " class="contacts__map ">

@@ -14,12 +14,16 @@
 .review__text {
   font-size: 14px;
   line-height: 30px;
+  padding: 0 20px 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .review {
     width: 660px;
     margin: 0 auto;
+  }
+  .review__text {
+    font-size: 18px;
   }
   .review__wrap {
     display: flex;
