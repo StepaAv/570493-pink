@@ -11,6 +11,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list {
+    padding-top: 55px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .site-list__item {
     & a {
@@ -20,5 +26,9 @@
       text-transform: none;
       font-weight: regular;
     }
+  }
+  .site-list {
+    padding-top: 18px;
+    padding-left: 39px;
   }
 }

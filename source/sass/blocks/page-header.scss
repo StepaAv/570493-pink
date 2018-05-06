@@ -22,12 +22,15 @@
     width: 660px;
     margin: 0 auto;
   }
+  .page-header__container {
+    min-height: 365px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     width: 100%;
-    height: 110px;
+    min-height: 110px;
     background-color: $background-small;
     position: relative;
     z-index: 2;
@@ -43,5 +46,8 @@
     // left: 1px;
     margin-left: 0;
     top: 10px;
+  }
+  .page-header__container {
+    min-height: 110px;
   }
 }

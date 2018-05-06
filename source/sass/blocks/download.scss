@@ -62,6 +62,7 @@
   //   margin-right: 20px;
   // }
   .download__mobile-hidden {
+    padding-right: 14px;
     width: 230px;
     align-self: center;
     padding-bottom: 30px;
@@ -79,21 +80,34 @@
     width: 300px;
     margin-left: 20px;
     margin-right: 10px;
+    background-color: transparent;
+    padding-top: 75px;
+    margin-left: 15px;
   }
   .download__list {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
     & .download__item {
-      margin: 0 15px;
+      margin: 0 5px;
+      padding-top: 15px;
     }
   }
+  .download__button-wrap {
+    padding-top: 16px;
+    // pading-left: 90px;
+    // margin-left: px;
+  }
   .download__button {
-    margin-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
   .download__availability-text {
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
+    width: 300px;
+
   }
 }
 
@@ -101,16 +115,19 @@
   .download {
     position: relative;
     width: 100%;
-    min-height: 820px;
+    min-height: 853px;
     justify-content: center;
     background-image: $main-image;
     background-size: 100%;
-    margin-top: -80px;
+    margin-top: -110px;
     z-index: 1;
+    // outline: 10px solid #ffffff;
   }
   .download__wrap {
     width: 380px;
-    margin-top: 200px;
+    margin-top: 125px;
+    margin-left: 0px;
+    padding-right: 80px;
   }
   .download__promo {
     // background-image: none;
@@ -124,12 +141,24 @@
   }
   .download__button {
     height: 55px;
+    font-size: 21px;
+    padding-left: 25px;
+    padding-right: 25px;
+    // margin-top: 500px;
   }
   .download__mobile-hidden {
     &::before {
       content: "Взгляните на жизнь иначе!";
       font-size: 50px;
       line-height: 60px;
+      display: block;
+      padding-bottom: 26px;
+      // letter-spacing: 0.1px;
+      // word-spacing: 1.1px;
     }
+  }
+  .download__list {
+    padding-top: 65px;
+    padding-bottom: 20px;
   }
 }
