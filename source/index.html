@@ -35,9 +35,9 @@
         </div>
         <div class="download__wrap">
           <div class="download__mobile-hidden"></div>
-         <div class="download__button-wrap">
+          <div class="download__button-wrap">
             <a href="https://www.apple.com/itunes/working-itunes/market/" class="button download__button">Скачать приложение</a>
-         </div>
+          </div>
           <ul class="download__list">
             <li class="download__item">
               <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__logo download__logo--apple">
@@ -74,7 +74,8 @@
             </li>
             <li class="features__item">
               <p class="features__name">Меняет мир вокруг</p>
-              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                <br> усилить эффект</p>
             </li>
             <li class="features__item">
               <p class="features__name">Заводит новых друзей</p>
@@ -110,55 +111,10 @@
     </section>
     <section class="subscribe">
       <div class="container">
-        <table class="subscribe__table subscribe__table--mobile">
-          <tr class="subscribe__window">
-            <th class="subscribe__cell">База
-              <br>1,99 Usd</th>
-            <th class="subscribe__cell">
-              <p class="subscribe__package">Стандарт
-                <br>3,99 Usd</p>
-              <th class="subscribe__cell">Анлим
-                <br>9,99 Usd</th>
-            </th>
-          </tr>
-          <tr class="subscribe__window">
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
-            </td>
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
-            </td>
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
-            </td>
-          </tr>
-          <tr class="subscribe__window">
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cross">Смайлики</p>
-            </td>
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
-            </td>
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
-            </td>
-          </tr>
-          <tr class="subscribe__window">
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cross">Комментарии</p>
-            </td>
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cross">Комментарии</p>
-            </td>
-            <td class="subscribe__cell">
-              <p class="subscribe__text subscribe__text--cheked">Комментарии</p>
-            </td>
-          </tr>
-        </table>
         <div class="subscribe__table-wrap">
-          <table class="subscribe__table subscribe__table--tablet subscribe__table--desktop">
+          <table class="subscribe__table subscribe__table--mobile subscribe__table--tablet subscribe__table--desktop">
             <tr class="subscribe__window">
-              <td></td>
+              <td class="subscribe__cell--mobhiden"></td>
               <th class="subscribe__cell">База
                 <br>1,99 Usd</th>
               <th class="subscribe__cell">Стандарт
@@ -167,22 +123,49 @@
                 <br>9,99 Usd</th>
             </tr>
             <tr class="subscribe__window">
-              <td class="subscribe__cell">Розовый фильтр</td>
-              <td class="subscribe__cell">+</td>
-              <td class="subscribe__cell">+</td>
-              <td class="subscribe__cell">+</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">Розовый фильтр</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">+</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">+</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">+</td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+              </td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+              </td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cheked">Розовый фильтр</p>
+              </td>
             </tr>
             <tr class="subscribe__window">
-              <td class="subscribe__cell">Смайлики</td>
-              <td class="subscribe__cell">-</td>
-              <td class="subscribe__cell">+</td>
-              <td class="subscribe__cell">+</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">Смайлики</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">-</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">+</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">+</td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cross">Смайлики</p>
+              </td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
+              </td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cheked">Смайлики</p>
+              </td>
             </tr>
             <tr class="subscribe__window">
-              <td class="subscribe__cell">Комментарии</td>
-              <td class="subscribe__cell">-</td>
-              <td class="subscribe__cell">-</td>
-              <td class="subscribe__cell">+</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">Комментарии</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">-</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">-</td>
+              <td class="subscribe__cell subscribe__cell--mobhiden">+</td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cross">Комментарии</p>
+              </td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cross">Комментарии</p>
+              </td>
+              <td class="subscribe__cell subscribe__cell--tabhiden">
+                <p class="subscribe__text subscribe__text--cheked">Комментарии</p>
+              </td>
             </tr>
           </table>
         </div>

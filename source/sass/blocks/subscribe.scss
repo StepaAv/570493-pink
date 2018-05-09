@@ -57,8 +57,10 @@
   text-transform: uppercase;
 }
 
-.subscribe__table--tablet {
+@media (max-width: $tablet-width) {
+.subscribe__cell--mobhiden {
   display: none;
+}
 }
 
 @media (min-width: $tablet-width) {
@@ -73,7 +75,7 @@
   .subscribe__slider {
     display: none;
   }
-  .subscribe__table--mobile {
+  .subscribe__cell--tabhiden {
     display: none;
   }
   .subscribe__table--tablet {
