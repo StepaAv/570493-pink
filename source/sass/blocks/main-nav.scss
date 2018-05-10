@@ -44,4 +44,9 @@
   .main-nav__toggle {
     display: none;
   }
+  .site-list__item {
+    & a {
+      font-weight: regular;
+    }
+  }
 }

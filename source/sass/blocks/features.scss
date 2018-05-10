@@ -32,6 +32,7 @@
 .features__slogan {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 300;
   margin: 0 auto;
   padding-top: 40px;
   &:nth-of-type(2) {
@@ -116,7 +117,7 @@
     line-height: 24px;
     padding-top: 0px;
     margin-top: 0;
-    letter-spacing: 0.3px;
+    // letter-spacing: 0.3px;
   }
   // .features__phone-pic {
   //   width: 320px;
@@ -160,7 +161,7 @@
     padding-top: 0;
     padding-left: 0;
     padding-right: 1px;
-    letter-spacing: 0.3px;
+    // letter-spacing: 0.3px;
     }
   .features__timer-pic {
     width: 300px;
@@ -296,6 +297,6 @@
   .features__effect-link {
     font-size: 18px;
     line-height: 30px;
-    letter-spacing: 0.3px;
+    // letter-spacing: 0.3px;
   }
 }
