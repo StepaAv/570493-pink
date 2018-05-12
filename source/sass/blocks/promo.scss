@@ -1,5 +1,5 @@
 .promo {
-  height: 238px;
+  min-height: 173px;
   background-image: $main-image;
   box-shadow: $shadow3;
   margin: 0 auto;
@@ -13,6 +13,10 @@
   color: #ffffff;
   padding-top: 30px;
   margin-top: 0px;
+  font-weight: 300;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,7 +26,6 @@
   .promo__title {
     font-size: 50px;
     line-height: 60px;
-    // width: 660px;
     margin: 0 auto;
   }
 }

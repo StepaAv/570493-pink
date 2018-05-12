@@ -1,12 +1,17 @@
 .subscribe {
   text-transform: uppercase;
   box-shadow: $shadow2;
-  overflow: scroll;
+  // overflow: scroll;
   margin: 0 auto;
-  min-height: 390px;
+  min-height: 396px;
+  margin-top: -18px;
 }
 
-.subscribe__table--mobile {
+.subscribe__cell {
+  border: 1px solid #e5e5e5;
+  height: 75px;
+}
+.subscribe__table {
   border: 1px solid #e5e5e5;
   width: 840px;
   border-collapse: collapse;
@@ -17,7 +22,7 @@
     font-size: 14px;
     text-align: left;
     text-transform: none;
-    padding-left: 20px;
+    padding-left: 22px;
   }
   & .subscribe__cell--main {
     width: 280px;
@@ -28,15 +33,20 @@
     line-height: 30px;
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
+    padding-left: 0;
+      & p:first-line {
+        font-size: 18px;
+        font-weight: bold;
+      }
+     & p {
+      margin-top: 0;
+      margin-bottom: 0;
+     }
   }
   & .subscribe__cell--main:first-line {
     font-weight: bold;
   }
-}
-
-.subscribe__cell {
-  border: 1px solid #e5e5e5;
-  height: 75px;
 }
 
 .subscribe__package {
@@ -59,11 +69,15 @@
   text-transform: uppercase;
 }
 
+.subscribe__slider {
+  padding-top: 20px;
+}
+
 @media (max-width: $tablet-width) {
 .subscribe__cell--mobhiden {
   display: none;
 }
-.subscribe__table--mobile {
+.subscribe__table {
   margin-left: -263px;
 }
 .subscribe__container {
@@ -80,30 +94,30 @@
     min-height: 362px;
   }
   .subscribe__table-wrap {
-    margin: 0 auto;
-    padding-top: 80px;
-  }
+      margin: 0 auto;
+      padding-top: 30px;
+      padding-left: 10px;
+    }
   .subscribe__slider {
     display: none;
   }
   .subscribe__cell--tabhiden {
     display: none;
   }
-  .subscribe__table--tablet {
+  .subscribe__table {
     width: 620px;
-    height: 220px;
     display: block;
     border-collapse: collapse;
     & td {
-      width: 150px;
+      width: 160px;
       height: 47px;
       text-transform: none;
       text-align: left;
       padding-left: 10px;
     }
     & .subscribe__cell--main {
-      width: 150px;
-      height: 60px;
+      width: 160px;
+      height: 80px;
       color: #ffffff;
       background-color: #283645;
       text-transform: uppercase;
@@ -125,7 +139,8 @@
   .subscribe__slider {
     display: none;
   }
-  .subscribe__table--desktop {
+
+  .subscribe__table {
     width: 940px;
     height: 280px;
     display: block;

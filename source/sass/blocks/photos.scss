@@ -1,8 +1,17 @@
+.photos {
+  // width: 320px;
+}
 .photos__text {
   width: 320px;
-  margin: 0;
+  margin: 0 auto;
   line-height: 30px;
   box-shadow: $shadow1;
+  min-height: 185px;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 40px;
+  font-size: 14px;
 }
 .photos__container {
   padding: 0;

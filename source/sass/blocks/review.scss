@@ -3,6 +3,7 @@
   margin: 0 auto;
   width: 320px;
   min-height: 447px;
+  // margin-top: -60px;
 }
 
 .review__author {
@@ -17,10 +18,15 @@
 .review__text {
   font-size: 14px;
   line-height: 30px;
-  padding: 0px 22px 0 22px;
-  // width: 280px;
-  // margin: 0 auto;
+  padding-top: 15px;
+  width: 280px;
+  margin: 0 auto;
 }
+
+.review__slider {
+    margin-top: 22px;
+  }
+
 
 @media (min-width: $tablet-width) {
   .review {
@@ -31,9 +37,11 @@
   .review__text {
     font-size: 18px;
     margin-top: 0;
-    padding-left: 5px;
-    padding-right: 7px;
-    letter-spacing: 0.4px;
+    padding-top: 0;
+    // padding-left: 5px;
+    // padding-right: 7px;
+    width: 620px;
+    padding-bottom: 25px;
   }
   .review__wrap {
     // margin-top: 20px
