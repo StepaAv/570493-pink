@@ -11,3 +11,9 @@
   color: #ffffff;
   border-radius: 3px;
 }
+
+@media (min-width: $tablet-width) {
+  .button-submit {
+    width: 300px;
+  }
+  }

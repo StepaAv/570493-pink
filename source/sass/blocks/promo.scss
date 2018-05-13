@@ -22,14 +22,17 @@
 @media (min-width: $tablet-width) {
   .promo {
     width: 660px;
-    min-height: 330px;
+  }
+  .promo--form {
+  min-height: 390px;
+  margin-top: -110px;
   }
   .promo__title {
     font-size: 50px;
     line-height: 60px;
     width: 620px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 172px;
   }
 }
 

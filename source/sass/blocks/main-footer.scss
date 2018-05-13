@@ -21,6 +21,10 @@
   .main-footer--index {
     display: block;
   }
+  .main-footer--form {
+    margin-top: 20px;
+    min-height: 174px;
+  }
 }
 
 @media (min-width: $desktop-width) {

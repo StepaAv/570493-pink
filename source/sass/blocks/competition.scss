@@ -38,8 +38,9 @@
   }
   .competition__important-attention {
     text-align: right;
-    margin-top: -40px;
+    margin-top: -80px;
     height: 70px;
+    padding-right: 8px;
   }
   .competition__info-text {
   min-height: 240px;
@@ -57,4 +58,8 @@
   .competition__important-attention {
     text-align: right;
   }
+  .competition__info-text {
+  min-height: 230px;
+  width: 820px;
+}
 }
