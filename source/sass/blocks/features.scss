@@ -203,8 +203,7 @@
     text-align: center;
     width: 240px;
     padding-bottom: 25px;
-    // padding-top: 10px;
-    // padding-left: 12px;
+    padding-left: 5px;
   }
   .features__item {
     margin: 0 auto;
@@ -224,7 +223,6 @@
     }
     &:nth-of-type(2) {
       padding-left: 35px;
-      // padding-right: 1px;
       &::before {
         content: " ";
         background-image: url("https://image.ibb.co/c0ZMbx/1524546848176425783.jpg");
@@ -233,6 +231,9 @@
         display: block;
         margin: 0 auto;
         background-size: 100% 100%;
+      }
+      & .features__text {
+        padding-left: 7px;
       }
     }
     &:nth-of-type(3) {
@@ -254,8 +255,11 @@
   .features__wrap-text {
     width: 570px;
     padding-left: 5px;
-    // padding-right: 10px;
-    margin-left: 0;
+    margin-left: 362px;
+    padding-top: 40px;
+    & br {
+      display: none;
+    }
   }
   .features__timer-pic {
     width: 370px;
@@ -292,13 +296,19 @@
   .features__effect-text {
     font-size: 18px;
     line-height: 30px;
-    width: 490px;
+    width: 530px;
     margin-bottom: 0;
     padding-bottom: 30px;
+    padding-top: 10px;
+    margin-left: 0;
   }
   .features__effect-link {
     font-size: 18px;
     line-height: 30px;
     // letter-spacing: 0.3px;
+  }
+  .features__designer-nerd {
+    display: inline-block;
+    padding-right: 10px;
   }
 }

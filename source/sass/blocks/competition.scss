@@ -31,6 +31,11 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .competition__desktop-only {
+    display: none;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .competition {
@@ -57,9 +62,10 @@
   }
   .competition__important-attention {
     text-align: right;
+    padding-right: 0;
   }
   .competition__info-text {
-  min-height: 230px;
+  min-height: 225px;
   width: 820px;
 }
 }

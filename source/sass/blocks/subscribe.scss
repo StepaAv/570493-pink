@@ -1,7 +1,6 @@
 .subscribe {
   text-transform: uppercase;
-  box-shadow: $shadow2;
-  // overflow: scroll;
+  box-shadow: $shadow2; // overflow: scroll;
   margin: 0 auto;
   min-height: 396px;
   margin-top: -18px;
@@ -11,6 +10,7 @@
   border: 1px solid #e5e5e5;
   height: 75px;
 }
+
 .subscribe__table {
   border: 1px solid #e5e5e5;
   width: 840px;
@@ -35,14 +35,14 @@
     text-align: center;
     text-transform: uppercase;
     padding-left: 0;
-      & p:first-line {
-        font-size: 18px;
-        font-weight: bold;
-      }
-     & p {
+    & p:first-line {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    & p {
       margin-top: 0;
       margin-bottom: 0;
-     }
+    }
   }
   & .subscribe__cell--main:first-line {
     font-weight: bold;
@@ -74,18 +74,18 @@
 }
 
 @media (max-width: $tablet-width) {
-.subscribe__cell--mobhiden {
-  display: none;
-}
-.subscribe__table {
-  margin-left: -263px;
-}
-.subscribe__container {
-  width: 320px;
+  .subscribe__cell--mobhiden {
+    display: none;
+  }
+  .subscribe__table {
+    margin-left: -263px;
+  }
+  .subscribe__container {
+    width: 320px;
     margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
+    margin-right: auto;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -94,10 +94,10 @@
     min-height: 362px;
   }
   .subscribe__table-wrap {
-      margin: 0 auto;
-      padding-top: 30px;
-      padding-left: 10px;
-    }
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
   .subscribe__slider {
     display: none;
   }
@@ -144,8 +144,7 @@
     width: 940px;
     height: 280px;
     display: block;
-    margin: 0 auto; // padding-top: 70px;
-    // padding-right: 10px;
+    margin: 0 auto;
     border-collapse: collapse;
     & td {
       width: 234px;
@@ -155,6 +154,28 @@
     & th {
       width: 234px;
       height: 96px;
+    }
+  }
+  .subscribe__table-wrap {
+    padding-top: 80px;
+    padding-left: 0px;
+  }
+  .subscribe__table {
+    & .subscribe__cell--main p{
+      height: 100px;
+      font-size: 24px;
+      padding-top: 17px;
+       & .subscribe__cell--main:first-line {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+    & .subscribe__cell {
+      font-size: 18px;
+      padding-left: 18px;
+    }
+    & td {
+      height: 60px;
     }
   }
 }

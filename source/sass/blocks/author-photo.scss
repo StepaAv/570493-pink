@@ -1,27 +1,66 @@
 .author-photo {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
-  padding-top: 20px;
+  background-color: #f2f2f2;
+  margin-top: 17px;
+  text-align: left;
   &--day-photo {
-    min-height: 330px;
+    width: 320px;
+    min-height: 335px;
+    margin-top: 0;
+    background-color: #ffffff;
   }
-  &:nth-of-type(2) {
-    min-height: 324px;
+  &__day-wrap {
+    width: 280px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    min-height: 188px;
   }
-  &:nth-of-type(3) {
-    min-height: 301px;
+}
+
+.photos__small-photos {
+  & .author-photo {
+    &:nth-of-type(1) {
+      min-height: 323px; // margin-top: 19px;
+    }
+    &:nth-of-type(2) {
+      min-height: 301px;
+    }
+    &:nth-of-type(3) {
+      min-height: 323px;
+    }
+    &:nth-of-type(4) {
+      min-height: 301px;
+      margin-top: 22px;
+    }
+    &:nth-of-type(5) {
+      min-height: 301px;
+      margin-top: 22px;
+    }
+    &:nth-of-type(6) {
+      min-height: 301px;
+      margin-top: 22px;
+    }
   }
-  &:nth-of-type(4) {
-    min-height: 324px;
-  }
-  &:nth-of-type(5) {
-    min-height: 301px;
-  }
-  &:nth-of-type(6) {
-    min-height: 301px;
-  }
-  &:nth-of-type(7) {
-    min-height: 301px;
+  & .author-photo__photo {
+    &:nth-of-type(1) {
+      height: 181px;
+    }
+    &:nth-of-type(2) {
+      height: 181px;
+    }
+    &:nth-of-type(3) {
+      height: 181px;
+    }
+    &:nth-of-type(4) {
+      height: 181px;
+    }
+    &:nth-of-type(5) {
+      height: 181px;
+    }
+    &:nth-of-type(6) {
+      height: 181px;
+    }
   }
 }
 
@@ -31,7 +70,7 @@
   font-size: 14px;
   margin: 0;
   padding-top: 21px;
-
+  padding-left: 15px;
 }
 
 .author-photo__time-ago {
@@ -39,12 +78,12 @@
   font-weight: 300;
   text-transform: uppercase;
   display: inline-block;
-  padding-right: 100px;
 }
+
 
 .author-photo__author-text {
   @include mfont-article;
-  padding-left: 35px;
+  padding-left: 20px;
   text-align: left;
   margin: 0;
 }
@@ -56,8 +95,8 @@
   text-transform: uppercase;
   margin: 0;
   text-align: left;
-  padding-left: 65px;
-  padding-top: 13px;
+  padding-left: 50px;
+  padding-top: 9px;
 }
 
 .author-photo__photo {
@@ -66,14 +105,21 @@
 }
 
 .author-photo__panoram {
-   min-height: 135px;
-    width: 100%;
+  min-height: 135px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .author-photo--day-photo {
     width: 100%;
+    min-height: 510px;
+  }
+  .author-photo__panoram {
     height: 510px;
+  }
+  .author-photo__day-wrap {
+    width: 620px;
+    min-height: 115px;
   }
 }
 
@@ -82,4 +128,3 @@
     height: 510px;
   }
 }
-
