@@ -5,17 +5,32 @@
 }
 
 .competition__info-text {
-  min-height: 170px;
+  min-height: 152px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 20px;
+  padding-top: 41px;
+  margin: 0 auto;
 }
 
 .competition__important-attention {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  &:first-letter {
-    color: #d22856;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+.competition__star {
+  color: #d22856;
+}
+
+@media (max-width: $tablet-width) {
+  .competition__mobhiden {
+    display: none;
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .competition {
@@ -26,6 +41,13 @@
     margin-top: -40px;
     height: 70px;
   }
+  .competition__info-text {
+  min-height: 240px;
+  font-size: 18px;
+  padding-top: 92px;
+  text-align: center;
+  width: 550px;
+}
 }
 
 @media (min-width: $desktop-width) {

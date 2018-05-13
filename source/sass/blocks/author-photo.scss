@@ -1,21 +1,52 @@
 .author-photo {
   width: 320px;
-  height: 320px;
   margin: 0 auto;
+  padding-top: 20px;
+  &--day-photo {
+    min-height: 330px;
+  }
+  &:nth-of-type(2) {
+    min-height: 324px;
+  }
+  &:nth-of-type(3) {
+    min-height: 301px;
+  }
+  &:nth-of-type(4) {
+    min-height: 324px;
+  }
+  &:nth-of-type(5) {
+    min-height: 301px;
+  }
+  &:nth-of-type(6) {
+    min-height: 301px;
+  }
+  &:nth-of-type(7) {
+    min-height: 301px;
+  }
 }
 
 .author-photo__author-name {
   font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  padding-top: 21px;
+
 }
 
 .author-photo__time-ago {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+  display: inline-block;
+  padding-right: 100px;
 }
 
 .author-photo__author-text {
   @include mfont-article;
+  padding-left: 35px;
+  text-align: left;
+  margin: 0;
 }
 
 .author-photo__likes-text {
@@ -23,6 +54,20 @@
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
+  margin: 0;
+  text-align: left;
+  padding-left: 65px;
+  padding-top: 13px;
+}
+
+.author-photo__photo {
+  min-height: 180px;
+  width: 280px;
+}
+
+.author-photo__panoram {
+   min-height: 135px;
+    width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,7 +79,6 @@
 
 @media (min-width: $desktop-width) {
   .author-photo--day-photo {
-    // width: 1200px;
     height: 510px;
   }
 }
