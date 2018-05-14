@@ -18,51 +18,8 @@
   }
 }
 
-.photos__small-photos {
-  & .author-photo {
-    &:nth-of-type(1) {
-      min-height: 323px; // margin-top: 19px;
-    }
-    &:nth-of-type(2) {
-      min-height: 301px;
-    }
-    &:nth-of-type(3) {
-      min-height: 323px;
-    }
-    &:nth-of-type(4) {
-      min-height: 301px;
-      margin-top: 22px;
-    }
-    &:nth-of-type(5) {
-      min-height: 301px;
-      margin-top: 22px;
-    }
-    &:nth-of-type(6) {
-      min-height: 301px;
-      margin-top: 22px;
-    }
-  }
-  & .author-photo__photo {
-    &:nth-of-type(1) {
-      height: 181px;
-    }
-    &:nth-of-type(2) {
-      height: 181px;
-    }
-    &:nth-of-type(3) {
-      height: 181px;
-    }
-    &:nth-of-type(4) {
-      height: 181px;
-    }
-    &:nth-of-type(5) {
-      height: 181px;
-    }
-    &:nth-of-type(6) {
-      height: 181px;
-    }
-  }
-}
+
+
 
 .author-photo__author-name {
   font-weight: bold;
@@ -109,6 +66,58 @@
   width: 100%;
 }
 
+@media (max-width: $tablet-width) {
+  .author-photo__likes-text--mobhiden {
+    display: none;
+  }
+  .photos__small-photos {
+    & .author-photo {
+      &:nth-of-type(1) {
+        min-height: 323px;
+      }
+      &:nth-of-type(2) {
+        min-height: 301px;
+      }
+      &:nth-of-type(3) {
+        min-height: 323px;
+      }
+      &:nth-of-type(4) {
+        min-height: 301px;
+        margin-top: 22px;
+      }
+      &:nth-of-type(5) {
+        min-height: 301px;
+        margin-top: 22px;
+      }
+      &:nth-of-type(6) {
+        min-height: 301px;
+        margin-top: 22px;
+      }
+    }
+  }
+
+  & .author-photo__photo {
+    &:nth-of-type(1) {
+      height: 181px;
+    }
+    &:nth-of-type(2) {
+      height: 181px;
+    }
+    &:nth-of-type(3) {
+      height: 181px;
+    }
+    &:nth-of-type(4) {
+      height: 181px;
+    }
+    &:nth-of-type(5) {
+      height: 181px;
+    }
+    &:nth-of-type(6) {
+      height: 181px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .author-photo--day-photo {
     width: 100%;
@@ -120,6 +129,30 @@
   .author-photo__day-wrap {
     width: 620px;
     min-height: 115px;
+    & .author-photo__likes-text {
+      display: inline-block;
+      padding-left: 300px;
+    }
+    & .author-photo__likes-text--tabhiden {
+      display: none;
+    }
+  }
+  .author-photo__likes-text--tabhiden {
+    display: none;
+  }
+  .author-photo__photo {
+    height: 300px;
+    width: 300px;
+  }
+  .author-photo__author-text {
+    padding-left: 25px;
+  }
+  .author-photo__author-name {
+    padding-left: 25px;
+  }
+  .author-photo {
+    margin: 0;
+    margin-top: 17px;
   }
 }
 

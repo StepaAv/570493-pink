@@ -16,4 +16,10 @@
   .button-submit {
     width: 300px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .button-submit {
+    width: 260px;
   }
+}
