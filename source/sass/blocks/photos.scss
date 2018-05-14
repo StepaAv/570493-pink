@@ -67,11 +67,16 @@
     padding: 0 10px;
     text-align: center;
     min-height: 240px;
-    padding-top: 100px;
+    padding-top: 90px;
   }
   .photos__small-photos {
     width: 940px;
     margin: 0 auto;
-    margin-top: 60px;
+    // margin-top: 30px;
+  }
+  .photos__small-photos {
+    & .photos__wrapper {
+      min-height: 551px;
+    }
   }
 }

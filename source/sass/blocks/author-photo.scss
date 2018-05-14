@@ -158,12 +158,20 @@
   }
   .author-photo__panoram {
     height: 506px;
+     width: 1200px;
+     margin-left: -120px;
+
   }
   .author-photo__day-wrap {
     width: 620px;
-    min-height: 115px;
+    min-height: 96px;
   }
   .author-photo__day-wrap {
     width: 940px;
+  }
+  .author-photo__day-wrap {
+    & .author-photo__likes-text {
+      padding-left: 618px;
+    }
   }
 }
