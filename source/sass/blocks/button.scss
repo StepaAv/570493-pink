@@ -23,8 +23,16 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .button {
-//     // width: 3200px;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .button {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 260px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .button {
+    height: 50px;
+    text-align: center;
+  }
+}
